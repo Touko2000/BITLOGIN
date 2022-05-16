@@ -304,16 +304,6 @@ def main():
 
 if __name__ == '__main__':
     while 1:
-        try:
-            exit_code = 1
-            exit_code = os.system('ping www.baidu.com')
-            if exit_code:
-                print("No Connect")
-                raise Exception('connect failed.')
-            else:
-                print("检验时间：", timeout())
-                print("Connect already done!")
-        except:
-            print("登录时间：", timeout())
-            main()
+        print("登录时间：", timeout())
+        main()
         time.sleep(sleeptime)
